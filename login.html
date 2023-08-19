@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+        body {
+        background-color: rgba(32, 15, 206, 0.206);
+        background-image: url('images/login-background.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: auto;
+        height: auto;
+    }
+    .container{
+        margin:125px 550px;
+        display: block;
+        /* border: 2px solid brown; */
+        
+    }
+    .container h1{
+       text-align: center;
+       font-size: 75px; 
+       color: aqua;
+}
+    .form-group input{
+        text-align: center;
+        margin: 10px 30px;
+        display: block;
+        /* position:absolute; */
+        max-width: 100%;
+        max-height: 100%;
+        border: 2px solid rgba(172, 51, 51, 0.669);
+        border-radius: 7px;
+        font-size: 25px;
+    }
+    .form-group input:hover{
+        background-color:rgba(255, 255, 255, 0.505) ;
+    }
+    .submit{
+        padding: none;
+        text-align: center;
+        margin: 43px 137px;
+        display: block;
+        /* position:absolute; */
+        max-width: 100%;
+        max-height: 100%;
+        border: 2px solid rgb(23, 5, 5);
+        border-radius: 7px;
+        font-size: 25px;
+        font-weight: 500;
+        color:black;
+    }
+    .submit:hover{
+        background-color:rgba(231, 235, 223, 0.395)
+    }
+    span .email{
+        color:rgb(251, 248, 252);
+        padding-left:33px;
+        padding-bottom: 0px;
+        text-decoration: solid;
+        font-size: large;
+        font-weight: bold;
+    }
+    span .asterix{
+        color: red;
+    }
+    </style>
+<body>
+    <span class="container">
+        <h1>
+            Login Now
+        </h1>
+        <form action="noaction.php">
+            <span class="form-group">
+                <span class="email">Email</span>
+                <span class="asterix">*</span>
+                <input type="email" name="login" id="login">
+            </span>
+            <span class="email">Password</span>
+            <span class="asterix">*</span>
+            <span class="form-group">
+                <input type="text" name="login" id="login" >
+            <a href="" class="email">Forgot Password?</a>
+                <button class="submit">Submit</button>
+            </form>
+    </span>
+</body>
+</html>
+

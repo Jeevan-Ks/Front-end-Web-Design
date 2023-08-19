@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <br />
+    <ul>
+      <h2>
+        <li>This is the first element of the unordered list</li>
+        <li>This is the second element of the unordered list</li>
+        <li>This is the third element of the unordered list</li>
+      </h2>
+      <br />
+      <ul>
+        <li>This is the first list inside list</li>
+        <li>This is the second list inside list</li>
+        <li>This is the third list inside list</li>
+      </ul>
+    </ul>
+
+    <br />
+    <ol>
+      <li>This is the first element of the ordered list</li>
+      <li>This is the second element of the ordered list</li>
+      <li>This is the third element of the ordered list</li>
+      <br />
+      <ol type="a">
+        <li>This is the first list inside list</li>
+        <li>This is the second list inside list</li>
+        <li>This is the Third list inside list</li>
+      </ol>
+    </ol>
+
+    <!-- This is the end of lists -->
+    <!-- Forms in HTML -->
+    <form action="backend.php">
+      <div>
+        <label for="name">Name</label>:
+        <input type="text" id="name" />
+      </div>
+      <br />
+      <div>
+        <label for="usn">USN</label>::<input type="text" id="usn" />
+        <!-- label tag enables us to select the input by pressing on the name itself and not necessarily in the space privided to type-->
+      </div>
+      <br />
+      <div>
+        Email:<input type="email" name="MyEmail" />
+        <!-- name attribute is used to inform backend about the name with which it can access the email input and id should be the same as the name provided in label for-->
+      </div>
+      <br />
+      <div>DOB:<input type="date" name="DOB" /></div>
+      <br />
+      <div>
+        Example for checkbox :<input type="checkbox" value="Example" checked />
+        <!-- checked is used to check the box by default -->
+      </div>
+      <br />
+      <div>
+        Gender : Male<input type="radio" name="Mygender" /> Female<input
+          type="radio"
+          name="Mygender"
+        />
+        Other<input type="radio" name="Mygender" />
+      </div>
+      <br />
+      <div>
+        Describe yourself
+        <textarea name="Mytext" cols="60" rows="10"></textarea>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
+        <!-- value attribute displays itself in the website -->
+      </div>
+      <br />
+      <div>
+        <label for="car">Favourite car</label>
+        <select name="Myfavcar" id="car">
+          <option value="Lambo" selected>Lamborghini</option>
+          <!-- selected already keeps the particular entry selected -->
+          <option value="Mercedez">Mercedez</option>
+          <option value="Mustang">Mustang GT</option>
+        </select>
+        <!-- provides a drop down selection  -->
+      </div>
+      <!-- div is a block element as it takes the whole space of the line another example of this is paragraph tag.
+    Inline element example is span as it takes the space which is needed to display the content
+lets visualise this below-->
+      <p style="border: 3px solid blue">This is the first paragraph</p>
+      <p style="border: 3px solid rebeccapurple">
+        This is the second paragraph
+      </p>
+      <span style="border: 3px solid red">This is the first span</span>
+      <span style="border: 3px solid goldenrod">This is the second span</span>
+      <!-- Ids and classes -->
+      <!-- id full form is identifier it is used so that the backend can identify it uniquely and store in the database.it has to be unique so that the backend can access is perfectly when requested .it is also used by javascript to change the content in the id jst by using the id name-->
+      <!-- class is used to define css styling in mass to many characters.we can define any css styling by grabbing the class name.it can have same names and even multiple names unlike id-->
+      <br /><br />
+      <div>
+        <h id="Heading1" class="head">
+          This is the first heading to visualise id and class
+        </h>
+        <span class="head"></span>
+        <span id="Heading1"></span>
+        <!-- div.name.anotherclass this gives us the below div automatically -->
+        <div class="head another class"></div>
+        <!-- span.first.second*5 this gives us 5 spans as below and u can directly go to the next typing area by pressing tab for example tpye first as below and press tab to go to next line and to type second -->
+        <span class="first second">First</span>
+        <span class="first second">Second</span>
+        <span class="first second">Third</span>
+        <span class="first second">Fourth</span>
+        <span class="first second">Fifth</span>
+      </div>
+    </form>
+    <!-- HTML entities:&nbsp non breaking space is used to provide space in the paragraph or any other format.To print <p> or similar things which contain special characters we use HTML enitities &lt;p&gt; this print <p> on the webpage.The symbols or denotions of various things can also be written using this for example &pound displays the symbol of pound currency-->
+    <!-- Semantics tags is used to provide the name of certain lines of code to the SEO for better ranking of website <header> <footer> <aside> <section> etc-->
+  </body>
+</html>

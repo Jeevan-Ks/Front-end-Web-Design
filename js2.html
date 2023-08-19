@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<style>
+    #btn{
+        padding:5px;
+        background-color: rgb(197, 164, 229);
+        color:rgb(0, 0, 0);
+        font-weight: bolder;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container" id="main">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+    </div>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ratione nisi atque sint similique aliquam tempore dignissimos quibusdam ex, odio delectus facere labore illum molestias et non sit assumenda provident eligendi aut. Veritatis molestias minus libero neque natus, illum fugit velit non modi quo dolore, sunt iure quasi sequi id.</p>
+    <button id="btn" onclick="Togglehide()">
+        Show/Hide
+    </button>
+    <script>
+        // let main=document.getElementById('main');
+        // console.log("This is returned by getElementById method",main);
+        // //we can change inner HTML code using this method in console
+        // let container=document.getElementsByClassName('container');
+        // console.log("This is returned by getElementsByClassName method",container[0]);
+        // let sel=document.querySelector('#main');
+        // console.log("This is returned by CSS selector method",sel);
+        // let sels=document.querySelectorAll('.container>li');
+        // console.log("This is returned by CSS selector all ",sels);
+        function Togglehide(){
+            let btn = document.getElementById('btn');
+            let para=document.getElementById('para');
+            if(para.style.display !='none'){
+            para.style.display='none';
+        }
+        else{
+            para.style.display='block';
+            
+            }
+        }
+        //similar things can be done using onmouseover , onmouseout , oncontextmenu , onmousemove , submit , focus .
+        // settimeout-->runs a funtion once after time interval
+        // cleartimeout-->runs a function repeatedly after timeinterval
+        function greet(name){
+            console.log("Hello GoodMorning "+ name );
+        }
+        setTimeout(greet,2000,"Jeevan");
+    </script>
+</body>
+</html>

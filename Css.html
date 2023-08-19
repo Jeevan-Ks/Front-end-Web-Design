@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Basics</title>
+    <style>
+        /* id selector */
+        #heading1{
+            background-image: url('https://pixelmechanics.com.sg/wp-content/uploads/2019/04/css.jpg');
+            background-position: center top;
+            /* center left center right etc etc border-repeat:no repeat background-repeat:no-repeat*/
+            color:rgb(242, 236, 236);
+            text-align: center;
+            text-align:absolute;
+            font-size: xx-large;
+            font-weight: 5000;
+            border:5px solid red;
+            margin: auto;/*size solid or outset or wavy etc followed by color*/
+            line-height: 30px;
+            /* used to give space for a line */
+            border-bottom-right-radius:40px;
+            border-top-left-radius: 40px;
+            padding:50px 10px 10px 10px;/*top right bottom left*/
+            height: 900px;
+            width: 1400px;
+        }
+        /* class selector */
+        .para , .bgcolor{
+            color:rgb(200, 0, 150); /*color by rgb*/
+            text-transform: capitalize;
+            font-size:20px ;
+            font-weight: bolder;
+            background-color: aqua;
+            float:top;
+            
+        }
+        /* Grouping selectors */
+        footer, .span{
+            background-color:burlywood;
+            float:right ;
+            font-size: larger;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height:fit-content;/*to add background according to height and weight of content*/
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="heading" id="heading1">CSS BASICS</h2> 
+    <p class="para bgcolor" id="para1">This paragraph is to demonstrate CSS styling</p>
+    <span class="span" id="span1">This is to demonstrate background color</span>
+
+    <footer>This is the footer of the CSS</footer>
+    <!-- we can use developer tools of a browser and inspect the website for various uses
+    we can even edit element in the browser and change code by right clicking  -->
+    <!-- we can use stylesheets from different websites for ex font family from stylesheets by copying it and pasting in our code 
+    a{} to style anchor tag
+        a:hover{color to change color whn cursor brought on link}
+        a:visited{}
+        a:active{to give color or smtg when link is pressed}
+        z-index is used to display a item on another item it vl work only for position relative,absolute sticky or fixed
+        for centering an element using margin should also give it width or height and only then it comes to center
+        input[type='text']used to style input where type is text
+        in general can use a tag followed by its attribute in square brackets with single quotes
+    -->
+</body>
+</html>

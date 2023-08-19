@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Now</title>
+</head>
+<style>
+    body {
+        background-color: rgba(32, 15, 206, 0.206);
+        background-image: url('images/login-background.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .container{
+        margin:100px auto;
+        display: block;
+        
+    }
+    .container h1{
+        color: aquamarine;
+       text-align: center;
+       font-size: 75px; 
+}
+    .form-group input{
+        text-align: center;
+        margin: 10px 574px;
+        display: block;
+        /* position:absolute; */
+        max-width: 100%;
+        max-height: 100%;
+        border: 2px solid rgba(172, 51, 51, 0.669);
+        border-radius: 7px;
+        font-size: 25px;
+    }
+    .form-group input:hover{
+        background-color:rgba(255, 255, 255, 0.505) ;
+    }
+    .submit{
+        padding: none;
+        text-align: center;
+        margin: 43px 681px;
+        display: block;
+        /* position:absolute; */
+        max-width: 100%;
+        max-height: 100%;
+        border: 2px solid rgb(23, 5, 5);
+        border-radius: 7px;
+        font-size: 25px;
+        font-weight: 500;
+        color:black;
+    }
+    .submit:hover{
+        background-color:rgba(231, 235, 223, 0.395)
+    }
+    .reg{
+        padding: 0px 578px; 
+        color: rgb(251, 248, 252);
+        display: inline-block;
+        font-weight: bold;
+        font-size: large;
+        clear: left;
+    }
+
+</style>
+<body>
+    <span class="container" id="reg" onclick="ToggleHide">
+        <h1>
+            Register Now
+        </h1>
+        <form action="noaction.php">
+            <span class="reg">Name*</span>
+            <span class="form-group">
+                <input type="text" name="fullname" required="">
+            </span>
+            <span class="form-group">
+                <span class="reg">Email/Phone*</span>
+                <input type="email" name="emailphone"  required="">
+            </span>
+            <span class="form-group">
+                <span class="reg">Password*</span>
+                <input type="password" name="password"  required="">
+            </span>
+            <button class="submit">Submit</button>
+    </form>
+</span>
+<script src="gym.js"></script>
+</body>
+</html>

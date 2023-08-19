@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Tutorial</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>This is a paragraph</p>
+      <p id="sisya"></p>
+    </div>
+    <script>
+      console.log("Hello Soole Magne");
+      var num1=45;
+      var num2=54;
+      console.log("This is answer of num1+num2" , num1+num2);
+      var name='Jeevan';
+      var fullname='Jeevan K Shankar';
+      console.log(`${name} is my first name and ${fullname} is my full name`); 
+    //   This command is used to print name in the console using $ symbol
+    console.log("Length of full name is " , fullname.length);
+    document.getElementById("sisya").innerHTML=('<h1>This is H1 heading inserted dynamically using innerHTML</h1>')
+    var position=fullname.indexOf("S");//prints the index of particular element
+    console.log(position);
+    position=fullname.lastIndexOf("e");//prints last occurence of element
+    console.log(position);
+    var substr=fullname.slice(1,6);//can take negative index
+    console.log(substr);
+    var substrs=fullname.substring(1,6);//this cant take negative index
+    console.log(substrs);
+    var newfullname=fullname.replace("Jeevan", "JEEVAN");
+    console.log(newfullname);
+    console.log(fullname.toUpperCase());//to tranform to uppercase or lowercase
+    //concat used to concatenate
+    //trim trims extra spaces from starting and ending of string
+    //charAt()can be used to get char at a index
+    let a="A";//this is a btr way of declaring variable it stays only in the block and can be redeclared again in the next block(between {and} bracket)
+    const b = 25;//this cant be changed it is constan
+    let employee={
+        name:"Jeevan",
+        dept:"Engineering",
+        bike:"NS160"
+    }
+    console.log(employee);//this is an object
+    let array=[4,3,2,1,"NS160"];//this is an array
+    console.log(array);
+    array=array.sort();
+    console.log(array);
+    array.push("End");
+    console.log(array);
+    // DOM=Document Object Model
+    // alert("This is alert");
+    // let p=prompt("What is your name sisya??","Gaandu");//anything written after , is the default value.if u dont wnt to provide any default value then type " " in default space 
+    // console.log(p);
+    // let p1= confirm("Is your name correct??");
+    // if(p1){
+    //     console.log("Your name is " , p);
+    // }
+    // else{
+    //     console.log("Action cancelled!!!");
+    // }
+    //LOOPS IN JS
+    let i=0;
+    for(i=0;i<5;i++){
+      console.log(i);
+    }
+    let friends=["Jayanth","Lucky","Rounak","Ishika","Bhargav"]; 
+    for(let index=0;index<friends.length;index++){
+      const element=friends[index];
+      console.log("Hello friend "+element);
+    }
+    friends.forEach(function f(element){
+      console.log("Hello Friend " + element + " Welcome to modern JavaScript");
+    });
+    for(element of friends){
+      console.log("Hello Friend " + element + " Welcome to modern JavaScript again " );
+    }
+    //to iterate objects 
+    // let employee={
+    //     name:"Jeevan",
+    //     dept:"Engineering",
+    //     bike:"NS160"
+    // }
+    for(key in employee){
+      console.log(`The ${key} of employee is ${employee[key]}`);
+    }
+    // while works the same lik in C and other languages
+    let j=0;
+    do
+    {
+      console.log(j);
+      j++;
+    }
+    while(j<4);
+    </script>
+  </body>
+</html>

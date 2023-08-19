@@ -1,0 +1,23 @@
+var str="This is a string"
+var position=str.indexOf("is") used to find the index of any substring
+var position=str.lastIndexOf("is") last index 
+var subtr=str.slice(1,5)
+var substr=str.substring(1,6)
+var substr=str.substr(1,7)
+var replaced=str.replace("Hello Node.js")
+var lowercase=str.toLowerCase()
+var uppercase=str.toUpperCase()
+var newstring=str.concat(substr,substr)
+console.log(substr.trim())trims the empty spaces
+str.charAt(2)
+let can be used instead of var to declare within blocks or loops etc var is global so it can be replaced unknowingly and cause errors
+const can be used to declare constant variables
+function can be created using function keyword for ex function greet(name){ }
+click events can be initialised by function and also using css like display='none' to hide and display='block' to show after clicking
+setTimeOut function can be used to run any function or a action after sometime like setTimeOut(greet,5000)here 5000 is ms.
+also setTimeOut(greet,5000,'Harry')
+Date(year,month,day,hours,mins,secs,ms)
+getFullYear(),getDate etcetc 
+
+Synchronous or blocking - executes line by line callback 
+Asynchronous or non blocking - no guarantee of line by line execution callbacks will fire(function will execute on its own indepent of other code in the program)
